@@ -32,7 +32,7 @@ Output:
 4 8 10 10
 Time Complexity : O(m + n)
 Auxiliary Space: O(1)
-_______________________________________________________________
+______________________________________________________________
 // Handling duplicate element
 
 #include <bits/stdc++.h>
