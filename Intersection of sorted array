@@ -1,3 +1,5 @@
+// Not handling duplicate element
+
 #include<bits/stdc++.h>
 using namespace std;
 void print_intersection(int arr1[],int arr2[],int m,int n)
@@ -19,14 +21,19 @@ void print_intersection(int arr1[],int arr2[],int m,int n)
 }
 int main()
 {
-    int arr1[]={1,4,6,8,10};
-    int arr2[]={2,3,4,5,7,8,9};
+    int arr1[]={1,4,6,8,10,10};
+    int arr2[]={2,3,4,5,7,8,9,10,10};
     int m=sizeof(arr1)/sizeof(arr1[0]);
     int n=sizeof(arr2)/sizeof(arr2[0]);
     print_intersection(arr1,arr2,m,n);
 }
 
 Output:
-4 8
+4 8 10 10
 Time Complexity : O(m + n)
 Auxiliary Space: O(1)
+_______________________________________________________________
+// Handling duplicate element
+
+
+
